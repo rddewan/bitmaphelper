@@ -28,7 +28,7 @@ public class BitmapHelper {
     }
 
     public static Bitmap convertBase64ToBitmap(String base64){
-        byte[] byteArray = Base64.decode(base64,Base64.NO_WRAP);
-        return BitmapFactory.decodeByteArray(byteArray,0,base64.length());
+        byte[] byteArray = Base64.decode(base64,Base64.DEFAULT);
+        return BitmapFactory.decodeByteArray(byteArray,0,byteArray.length);
     }
 }
