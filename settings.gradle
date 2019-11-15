@@ -1,0 +1,2 @@
+include ':app', ':bitmaphelper'
+rootProject.name='BitmapConverter'
